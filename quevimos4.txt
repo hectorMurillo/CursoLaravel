@@ -1,0 +1,41 @@
+Pasar ID por rutas;
+
+{path: ':id'}   <-- determina que es un parametro
+
+ng g service productos/producto <-- dentro del modulo producto 
+agregaremos un servicio, debe de ser proveido(declarar en el modulo
+para poderlo usar).
+
+dentro de productos.module la proveo con el arreglo
+providers:[
+    ProductoService
+  ],<-- para usarlo en las clases dentro de productos
+
+
+
+dentro de producto.service encuentro el decorador que hace posible la
+injeccion <-- import { Injectable } from '@angular/core';
+
+@Injectable() de esta manera le indico que el decorador se hara presente en es clase
+
+npm install paquete --save //asegura que al coolaborar en proyecto corriendo el npm install agrega las dependencias 
+
+Proteger una ruta //Falta de autenticación
+para proteger tiene que mandar un canActivate, es un parametro de parte de la ruta..
+
+creamos una clase a nivel global
+
+Instalador de dependencias (composer)
+INSTALAR LARAVEL
+C:\xampp\htdocs>composer create-project laravel/laravel softwee
+
+
+C:\xampp\htdocs\softwee>php artisan make:test <--command Line Interface
+
+Para correr los testing se requiere del archivo phpunit
+
+Configurar Rutas: routes/api.php
+
+
+CREAR UN CONTROLADOR
+C:\xampp\htdocs\softwee>php artisan make:controller ProductosController --resource 
